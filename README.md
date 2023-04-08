@@ -1,8 +1,9 @@
-#Тестовое задание на позицию frontend разработчика
-React-приложение поиска книг с помощью Google Books API. Документация: https://developers.google.com/books/docs/v1/using. 
+# Тестовое задание на позицию frontend разработчика
+React-приложение поиска книг с помощью Google Books API. 
+Документация: https://developers.google.com/books/docs/v1/using. 
+Стек: JavaScript, React, Redux, MaterialUI
 
 Приложение на Netlify: https://sayana1707-books-app.netlify.app
-Стек: JavaScript, React, Redux, MaterialUI
 
 Функционал:
 - В компоненте SearchBar текстовое поле и кнопка поиска. По введенной пользователем подстроке производится поиск книг. Триггером к поиску является либо нажатие Enter (когда текстовое поле в фокусе), либо нажатие кнопки поиска.
