@@ -1,6 +1,6 @@
-export const setLoading = (isLoading) => {
+export const setLoading = (loading) => {
     return {
       type: 'SET_LOADING',
-      payload: isLoading
+      payload: loading
     };
   };
