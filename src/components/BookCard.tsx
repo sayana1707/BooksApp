@@ -1,10 +1,27 @@
 import { Typography, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
+import React from 'react';
 
-const BookCard = ({ book }) => {
+interface Book {
+    volumeInfo: {
+        imageLinks  : {
+            thumbnail? : string;
+        };
+        title       : string;
+        categories  : string[];
+        authors     : string[];
+    }
+}
+
+interface BookCardProps {
+    book: Book;
+}
+
+const BookCard: React.FC<BookCardProps> = ({ book }) => {
   return (
     <Card sx={{ width: { xs: '140px', sm: '178px', md: '220px', height: {xs: '100px'}}, boxShadow: 'none', borderRadius: 0, m: 0.5 }}>
         <CardActionArea>
-           <CardMedia 
+           <CardMedia
+            component="img" 
             image={book.volumeInfo.imageLinks?.thumbnail}
             alt={book.volumeInfo.title}
             sx={{ width: { xs: '140px', sm: '178px', md: '220px'}, height: { xs: '210px', md: '300px'} }}

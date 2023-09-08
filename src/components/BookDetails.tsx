@@ -4,8 +4,19 @@ import { useParams } from 'react-router-dom';
 import { Stack, Typography, Box, Divider } from '@mui/material';
 import Loader from './Loader';
 
-const BookDetails = () => {
-  const [book, setBook] = useState(null);
+interface Book {
+    imageLinks: {
+      thumbnail: string;
+    };
+    title: string;
+    categories: string[];
+    authors: string[];
+    description: string;
+}
+
+const BookDetails: React.FC = () => {
+  const [book, setBook] = useState<Book | null>(null);
+
   const { id } = useParams();
 
   useEffect(() => {
