@@ -45,6 +45,7 @@ const SearchBar: React.FC<Props> = (props) => {
                         placeholder="Enter your search..."
                         value={searchTerm}
                         onChange={(event) => setSearchTerm(event.target.value)}
+                        data-testid="search-bar"
                     />
                     <IconButton type='submit' sx={{ p: '10px', color: 'darkorange' }}>
                         <Search />
