@@ -1,9 +1,14 @@
 # Тестовое задание на позицию frontend разработчика
 React-приложение поиска книг с помощью Google Books API. 
 Документация: https://developers.google.com/books/docs/v1/using. 
-Стек: JavaScript, React, Redux, MaterialUI
+Стек: TypeScript, React, Redux, MaterialUI
 
 Приложение на Netlify: https://sayana1707-books-app.netlify.app
+
+Приложение может быть запущено из Docker-контейнера. Для этого нужно выполнить следующие команды:
+- git clone https://github.com/sayana1707/BooksApp.git
+- docker build -t <имя_образа> .
+- docker run -dp <порт_хоста>:<порт_контейнера> <имя образа>
 
 Функционал:
 - В компоненте SearchBar текстовое поле и кнопка поиска. По введенной пользователем подстроке производится поиск книг. Триггером к поиску является либо нажатие Enter (когда текстовое поле в фокусе), либо нажатие кнопки поиска.
